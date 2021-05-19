@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="registration.css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <form action="connect.jsp" method="POST" autocomplete="off">
+            <h2 class="title">Registration Form</h2>
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="fullname" placeholder="Full Name" required/>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="pwd" placeholder="Password" name="password">
+            </div>
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="age" name="age" placeholder="Age" />
+            </div>
+            <br>
+            <div style="text-align: center;">
+            <input type="radio" id="male" name="gender" value="M">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="F">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="O">
+                <label for="other">Other</label>
+            </div>
+            <br>
+            <div class="textarea">
+                <label>College Address...</label>
+                <textarea rows="4" cols="40" name="address" id="address"></textarea>
+            </div>
+            <div class="steam">
+                <label for="steam" style="padding-right: 1.8rem;">Choose your branch:</label>
+                <select name="branch" id="branch">
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                </select>
+            </div>
+            
+            <div class="skill">
+                <label for="skill">Choose your Technical Skills</label>
+                <input type="checkbox" id="C" name="tech" value="C" style="margin-left: 0px;">
+                <label for="C">C</label><br>
+                <input type="checkbox" id="Java" name="tech" value="Java" style="margin-left: 14.1rem;">
+                <label for="Java">Java</label><br>
+                <input type="checkbox" id="Python" name="tech" value="Python" style="margin-left: 14.1rem;">
+                <label for="Python">Python</label><br><br>
+            </div>
+
+            <input type="file" id="myfile" name="myfile">
+            <br><br>
+            <p><input type="checkbox" name="terms">I accepted the <u>Terms and Conditions</u> </p>
+            <div  class="centred" style="text-align: center;">
+                <button type="submit" id="submit-btn" value="submit" class="btn btn-success">submit</button>
+                <button type="reset" value="Reset" id="reset-btn" class="btn btn-primary">Reset</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="regscript.js"></script>
+</body>
+</html>

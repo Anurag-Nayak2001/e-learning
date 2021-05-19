@@ -1,0 +1,34 @@
+body{
+    background-color: AliceBlue;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 16px;
+  padding: 10px;
+}
+
+h1 {color: DarkBlue;text-align: center;}
+
+input[type=submit] { 
+    background-color: DodgerBlue;
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: MidnightBlue;
+    width: 10%;
+    margin-left: 47%;
+}
+input[type=submit]:active { 
+    background-color: DeepSkyBlue;
+}
+input[type=submit]:hover { 
+    background-color: RoyalBlue;
+}
+
+.option {
+    color: DarkSlateGrey;
+
+}
+.option:hover {background-color: GhostWhite;}
